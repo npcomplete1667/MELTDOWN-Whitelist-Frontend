@@ -7,13 +7,11 @@ import { useEffect, useState } from 'react';
 
 export const CTAButton = styled(Button)`
   width: 100%;
-  height: 60px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
+  height: 50px;
+  background: #0af220;
+  color: black;
+  font-size: 30px;
+  border-radius: 0;
 `; // add your own styles here
 
 export const MintButton = ({
@@ -37,6 +35,7 @@ export const MintButton = ({
 
   return (
     <CTAButton
+      className="mint-button"
       disabled={
         candyMachine?.state.isSoldOut ||
         isMinting ||
