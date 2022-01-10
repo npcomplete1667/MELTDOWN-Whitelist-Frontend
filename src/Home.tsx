@@ -163,7 +163,7 @@ const Home = (props: HomeProps) => {
   return (
     <div className="container">
       <div className="wrapper" style={{ backgroundImage: "url('/bg_img.svg')" }}>
-        <Container maxWidth="xs" style={{ position: 'relative', marginTop: 'calc(100vh - 100px)' }}>
+        <Container maxWidth="xs" style={{ position: 'relative', marginBottom: '25px' }}>
           <Paper
             style={{ padding: 4, backgroundColor: '#006837', borderRadius: 0 }}
           >
